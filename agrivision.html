@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriVision | Tamer Elkot</title>
+    <meta name="description" content="Detailed overview of the AgriVision / AI Water Sentinel project by Tamer Elkot.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="project-page">
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Tamer Elkot<span class="accent">.</span></a>
+            <div class="nav-links">
+                <a href="index.html#projects" class="btn-outline"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero Header -->
+    <header class="project-hero">
+        <div class="container project-hero-content">
+            <h1 class="animate-up">🌊 AI Water Sentinel</h1>
+            <h2 class="animate-up delay-1">Multispectral Satellite Water Segmentation</h2>
+            <p class="animate-up delay-2">An end-to-end cloud-native deep learning platform that precisely segments water bodies from live 12-channel Sentinel-2 satellite imagery.</p>
+            <div class="top-links animate-up delay-3">
+                <a href="https://github.com/tamer-elkoT/Water-Segmentation-using-Multispectral-and-optical-Data/tree/develop" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> View Repository</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Project Body -->
+    <main class="container project-details-container section">
+        
+        <div class="content-block animate-up">
+            <h3 class="block-title">📌 Project Overview Detailed</h3>
+            <p>Standard computer vision networks traditionally rely on 3-channel (RGB) images, making them susceptible to visual misinterpretations where dark shadows, dense forests, or black asphalt are wrongly classified as water.</p>
+            <p>This project solves this limitation by implementing a 12-channel multispectral AI engine. It digests not just visible light, but Near-Infrared (NIR), Shortwave Infrared (SWIR), and mathematically synthesized geographic probability bands. Combining Deep Learning with a modern high-performance web architecture, the system allows users to interactively draw bounding boxes anywhere on Earth, fetching live satellite geospatial data, running real-time neural network inference, and rendering the highly precise binary water mask instantly.</p>
+            <p>This project is meticulously architected following the MVC (Model-View-Controller) pattern, ensuring separation of concerns, scalability, and robust deployment pipelines using Docker.</p>
+        </div>
+
+        <div class="content-block animate-up">
+            <h3 class="block-title">🖥️ Interactive Dashboard Previews</h3>
+            <p>Below are live samples of the Streamlit user interface mapping the AI extraction logic atop real-world geospatial frames.</p>
+            
+            <div class="ui-gallery" style="display: flex; flex-direction: column; gap: 40px; margin-top: 30px;">
+                <div class="ui-sample">
+                    <h4 style="color: var(--white); margin-bottom: 15px; font-size: 18px;">Phase 1: Selecting the Target Area (Aswan Low Dam)</h4>
+                    <p style="color: var(--slate); font-size: 15px; margin-bottom: 15px;">The user interactively selects a bounding box across the map, which natively prepares the boundaries for multispectral fetching.</p>
+                    <img src="images/agrivision_ui_1.png" alt="Select Target Area UI" onerror="this.src='https://via.placeholder.com/1200x600/112240/64ffda?text=Please+Save+Your+First+Screenshot+As+images%2Fagrivision_ui_1.png'" style="width: 100%; border-radius: 8px; box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7); border: 1px solid var(--light-navy);">
+                </div>
+
+                <div class="ui-sample">
+                    <h4 style="color: var(--white); margin-bottom: 15px; font-size: 18px;">Phase 2: AI Extraction & Analytics Report</h4>
+                    <p style="color: var(--slate); font-size: 15px; margin-bottom: 15px;">The U-Net executes its feed-forward pass resulting in a heavily accurate deep-blue predictive mask accompanied by coverage metrics directly rendered on the dashboard.</p>
+                    <img src="images/agrivision_ui_2.png" alt="Analytics Report UI" onerror="this.src='https://via.placeholder.com/1200x600/112240/64ffda?text=Please+Save+Your+Second+Screenshot+As+images%2Fagrivision_ui_2.png'" style="width: 100%; border-radius: 8px; box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7); border: 1px solid var(--light-navy);">
+                </div>
+            </div>
+        </div>
+
+        <div class="content-block animate-up">
+            <h3 class="block-title">🛠️ Tools & Technologies</h3>
+            <p>This ecosystem incorporates a broad range of cutting-edge technologies to bridge Machine Learning with full-stack web development.</p>
+            
+            <div class="tech-grid">
+                <div class="tech-group">
+                    <h4><i class="fas fa-brain"></i> Machine Learning & Data Science</h4>
+                    <ul>
+                        <li><strong>TensorFlow / Keras:</strong> Primary framework for defining, training, and running inference on the custom U-Net neural network.</li>
+                        <li><strong>NumPy & SciPy:</strong> Used extensively for advanced multidimensional array manipulation.</li>
+                        <li><strong>Scikit-learn:</strong> Employed in metrics calculation and data pipeline structuring.</li>
+                    </ul>
+                </div>
+                
+                <div class="tech-group">
+                    <h4><i class="fas fa-satellite"></i> Geospatial & Image Processing</h4>
+                    <ul>
+                        <li><strong>Rasterio & CV2 (OpenCV):</strong> Reading cloud-optimized GeoTIFFs, cropping strict bounding boxes, and uniformly resizing multispectral bands.</li>
+                        <li><strong>PySTAC-Client & Planetary Computer:</strong> Querying Microsoft's STAC catalogs to locate and authenticate the latest cloud-free Sentinel-2 tiles.</li>
+                        <li><strong>Folium:</strong> Interactive JavaScript map rendered in Python, enabling geospatial inputs and displaying AI overlays.</li>
+                    </ul>
+                </div>
+                
+                <div class="tech-group">
+                    <h4><i class="fas fa-server"></i> Backend APIs & Architecture</h4>
+                    <ul>
+                        <li><strong>FastAPI & Uvicorn:</strong> High-performance asynchronous python web framework hosting inference and database logic (Controller).</li>
+                        <li><strong>SQLAlchemy & GeoAlchemy2:</strong> ORM powering schemas, enabling robust SQL insertion of prediction statistics (Model).</li>
+                        <li><strong>PostgreSQL:</strong> Scalable relational database system.</li>
+                    </ul>
+                </div>
+
+                <div class="tech-group">
+                    <h4><i class="fas fa-desktop"></i> Frontend & Deployment</h4>
+                    <ul>
+                        <li><strong>Streamlit:</strong> Reactive Python framework to build the Data Dashboard and Map Interface (View).</li>
+                        <li><strong>Docker & Docker Compose:</strong> Containerize the FastAPI backend, Streamlit frontend, and spinning up an isolated PostgreSQL database.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-block animate-up">
+            <h3 class="block-title">🚦 Application Workflow & Data Flow</h3>
+            <div class="workflow-steps">
+                <div class="step">
+                    <h4>1. User Input (views/streamlit_ui.py)</h4>
+                    <p>The user opens the Streamlit web dashboard. Using a Folium interactive map, they draw a geometric bounding box over a region on Earth and define a timeframe date range. Streamlit packages these GPS coordinates natively into a JSON payload and pushes a POST request to the backend.</p>
+                </div>
+                <div class="step">
+                    <h4>2. Backend Routing & Orchestration (controllers/api_router.py)</h4>
+                    <p>FastAPI catches the payload at the <code>/api/predict</code> endpoint. It calculates the total real-world Square Kilometers enclosed within the bounding box using rigorous geographic math.</p>
+                </div>
+                <div class="step">
+                    <h4>3. Data Ingestion (controllers/satellite_service.py)</h4>
+                    <p>The backend triggers PySTAC to poll the Microsoft Planetary Computer. It finds the highest quality imagery within the user-specified timeframe (cloud cover &lt; 5%). Using GDAL configurations, it performs a partial download exclusively for the pixels within the user's bounding box across optical and infrared channels. Crucial Step: The array undergoes strict Min-Max Normalization to map all physical reflectance values optimally between (0.0, 1.0).</p>
+                </div>
+                <div class="step">
+                    <h4>4. Neural Engine Prediction (models/unet_inference.py)</h4>
+                    <p>The normalized 12-channel (128, 128, 12) NumPy array is batched and passed into the WaterSegmentationModel class. The U-Net executes its feed-forward pass, returning a raw Sigmoid probability mask. A &gt; 0.5 binary threshold executes, generating a strict array where 1 represents Water and 0 represents Land.</p>
+                </div>
+                <div class="step">
+                    <h4>5. Data Post-Processing & Persistence</h4>
+                    <p>The binary mask calculates total water area and coverage percentage. The array is multiplied by 255, encoded entirely into a lossless Base64 PNG string. The system triggers an SQLAlchemy Database session, permanently logging the statistics into PostgreSQL.</p>
+                </div>
+                <div class="step">
+                    <h4>6. Frontend Rendering</h4>
+                    <p>The FastAPI server responds with the Base64 image payload and calculated statistics. Streamlit decodes the Base64 string, dynamically maps water pixels to an opaque translucent blue color map, and overlays it atop the original map view natively utilizing Folium's ImageOverlay anchored bounds.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-block animate-up">
+            <h3 class="block-title">🏗️ Project Architecture (MVC Pattern)</h3>
+            <pre class="code-block"><code>water_segmentation_project/
+│
+├── ml_pipeline/                   # 🧪 OFFLINE: Where the model was trained
+│   ├── data/                      # Raw and preprocessed .tif files
+│   ├── notebooks/                 # Jupyter exploratory files
+│   └── weights/                   # unet_water_seg_v1.h5 (Trained weights)
+│
+├── app/                           # 🚀 ONLINE: The Live MVC Application
+│   ├── main.py                    # The core application engine (FastAPI Root)
+│   │
+│   ├── models/                    # 🧠 MODEL: Data & Intelligence Layer
+│   │   ├── database.py            # SQLAlchemy tables (e.g., PredictionLog)
+│   │   └── unet_inference.py      # Object-Oriented U-Net Loader & Predictor
+│   │
+│   ├── views/                     # 🖥️ VIEW: User Interface Layer
+│   │   └── (Linked via pages/1_Water_tool.py)
+│   │
+│   ├── controllers/               # 🚦 CONTROLLER: Business Logic & Routing
+│   │   ├── api_router.py          # FastAPI endpoint /api/predict
+│   │   └── satellite_service.py   # PySTAC planetary connection logic
+│   │
+│   └── core/                      # ⚙️ SYSTEM: Configuration
+│       ├── config.py              # Environment variables
+│       └── db_setup.py            # PostgreSQL connection pool setup
+│
+├── pages/                         # Streamlit sub-pages
+│   └── 1_Water_tool.py            # The Interactive AI Tool User Interface
+│
+├── requirements.txt               # Dependencies
+├── Dockerfile                     # Instructions to build the web app container
+└── docker-compose.yml             # Orchestrates the App and PostgreSQL database</code></pre>
+        </div>
+
+        <div class="content-block animate-up">
+            <h3 class="block-title">🧗 Problems Faced & Technical Solutions</h3>
+            <div class="problems-grid">
+                
+                <div class="problem-card">
+                    <h4>Problem 1: Out of Memory (OOM) Errors & Latency Bottlenecks</h4>
+                    <div class="problem-issue"><strong>Issue:</strong> Loading standard Keras .h5 model files during every single /api/predict API call was incredibly slow (taking 3-5 seconds per request) and routinely crashed the web server when memory boundaries shattered on multiple requests.</div>
+                    <div class="problem-solution"><strong>Solution:</strong> Adopted a Singleton Object-Oriented layout (WaterSegmentationModel). The U-Net weights are now loaded exclusively once into RAM/VRAM when the FastAPI server initializes. API calls now merely access the loaded model instance, cutting inference latency down to ~80ms.</div>
+                </div>
+
+                <div class="problem-card">
+                    <h4>Problem 2: Multispectral Input Dimension Mismatch</h4>
+                    <div class="problem-issue"><strong>Issue:</strong> Standard Sentinel-2 optical bands (RGB/NIR) operate at 10m/pixel resolutions, while SWIR bands inherently operate at 20m/pixel. A U-Net rigidly expects fully symmetric spatial mappings and will crash if array depths mismatch.</div>
+                    <div class="problem-solution"><strong>Solution:</strong> Engineered a targeted Open-CV (cv2.resize) bridge within the data loader. It loops through all varied geographic bands dynamically interpolating and forcing them into a strict homogeneous 128x128 spatial standard matrix before stacking the depth channels.</div>
+                </div>
+
+                <div class="problem-card">
+                    <h4>Problem 3: Lethal Model Accuracy Drops (The "Black Mask" Incident)</h4>
+                    <div class="problem-issue"><strong>Issue:</strong> Post-deployment, the U-Net began returning purely black masks (0 water detected) during inference, despite achieving 98% IoU during training.</div>
+                    <div class="problem-solution"><strong>Solution:</strong> Upon severe debugging, it was discovered that live planetary APIs return unscaled 16-bit physical radiance values (ranging wildly from 0 to 15,000+), blinding the sigmoid functions. A rigid Min-Max Scaler equation was instituted in satellite_service.py, harmonizing exactly with the original training pipeline and normalizing all runtime arrays strictly between 0.0 and 1.0.</div>
+                </div>
+
+                <div class="problem-card">
+                    <h4>Problem 4: Sluggish Gigabyte Cloud Downloads</h4>
+                    <div class="problem-issue"><strong>Issue:</strong> Standard file fetching would forcibly pull entire 100km x 100km satellite tiles taking 10+ minutes, vastly exceeding API timeout thresholds simply to analyze a tiny bounding box.</div>
+                    <div class="problem-solution"><strong>Solution:</strong> Leveraged highly optimized Cloud-Optimized GeoTIFFs (COGs). Enabled hidden GDAL environment variables (rasterio.env.Env(VSI_CACHE=True)), meaning Rasterio solely downloads exclusively the granular bytes representing the exact pixel bounds requested over the network (Partial Range HTTP Requests).</div>
+                </div>
+
+                <div class="problem-card">
+                    <h4>Problem 5: Moving massive Arrays between Backend and Frontend</h4>
+                    <div class="problem-issue"><strong>Issue:</strong> Streaming a raw numpy matrix of inference results across HTTP from FastAPI to Streamlit was vastly inefficient and heavy.</div>
+                    <div class="problem-solution"><strong>Solution:</strong> Applied an elegant byte-compression. The (128, 128) mask is inherently transformed by Open-CV directly into an optimized byte-buffer .png image dynamically within RAM. It is base64 encoded into a raw string, zipped within JSON, and reconstructed fully on the frontend. This practically eliminated networking payload burdens.</div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-bottom" style="border:none; padding-top:40px;">
+            <p>&copy; 2026 Tamer Elkot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamer Elkot | AI Engineer</title>
+    <meta name="description" content="Portfolio of Tamer Elkot, an AI Engineer specializing in Computer Vision & MLOps.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Tamer Elkot<span class="accent">.</span></a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link btn-outline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg" style="background-image: url('images/hero_bg.png');"></div>
+        <div class="overlay"></div>
+        <div class="container hero-content">
+            <h2 class="animate-up">AI Engineer</h2>
+            <h1 class="animate-up delay-1">Tamer Elkot</h1>
+            <p class="tagline animate-up delay-2">Bridging the gap between robust AI models and scalable production systems.</p>
+            <div class="cta-group animate-up delay-3">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="https://drive.google.com/file/d/1c4l0GGaJVhwrvv-jOMHdegR-2IDRYMLn/view?usp=sharing" target="_blank" class="btn btn-secondary"><i class="fas fa-download"></i> Download Resume</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="Tamer Elkot" onerror="this.src='https://via.placeholder.com/300x300/112240/64ffda?text=TE'">
+                </div>
+                <div class="about-text">
+                    <p>I am an <strong>AI Engineer</strong> specializing in Computer Vision, MLOps, and backend development, with hands-on expertise in designing and deploying end-to-end AI systems—from data pipelines to production inference servers. I work with TensorFlow, PyTorch, YOLOv8, FastAPI, Docker, and PostgreSQL to deliver scalable, production-ready machine learning solutions.</p>
+                    <p>With a strong engineering mindset and a background in Mechatronics Engineering, I have a proven ability to lead cross-functional teams and deliver measurable results. I am passionate about applying AI to solve impactful problems in <strong>agriculture, logistics, healthcare, and security</strong>, handling the full lifecycle from data engineering to cloud deployment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-eye"></i></div>
+                    <h3>AI & Computer Vision</h3>
+                    <div class="skill-tags">
+                        <span>TensorFlow</span>
+                        <span>Keras</span>
+                        <span>Scikit-learn</span>
+                        <span>YOLOv8</span>
+                        <span>OpenCV</span>
+                        <span>Transformers</span>
+                        <span>VLMs</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend Development</h3>
+                    <div class="skill-tags">
+                        <span>FastAPI</span>
+                        <span>Django</span>
+                        <span>Streamlit</span>
+                        <span>PostgreSQL</span>
+                        <span>SQLAlchemy</span>
+                        <span>REST APIs</span>
+                        <span>Celery</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-infinity"></i></div>
+                    <h3>MLOps & Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span>Docker</span>
+                        <span>Linux (Ubuntu)</span>
+                        <span>Git</span>
+                        <span>GitHub Actions</span>
+                        <span>AWS</span>
+                        <span>VectorDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Languages & Data</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>C</span>
+                        <span>SQL</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1: AgriVision -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project_agrivision.png" alt="AgriVision" onerror="this.src='https://via.placeholder.com/600x400/112240/64ffda?text=AgriVision'">
+                        <div class="project-links">
+                            <a href="agrivision.html" title="View Details"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/tamer-elkoT/Water-Segmentation-using-Multispectral-and-optical-Data/tree/develop" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="agrivision.html" style="color: inherit;">AgriVision</a></h3>
+                        <div class="project-description">
+                            <ul>
+                                <li><strong>Geospatial Pipeline:</strong> Engineered a robust 12-channel multispectral data pipeline using Sentinel-2 imagery with advanced radiometric normalization.</li>
+                                <li><strong>Deep Learning Architecture:</strong> Trained a custom U-Net for semantic segmentation with a hybrid Dice + Binary Cross-Entropy loss.</li>
+                                <li><strong>MLOps & Deployment:</strong> Deployed via FastAPI for asynchronous processing and Docker for containerization, persisting data in PostgreSQL.</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span>U-Net</span>
+                            <span>Sentinel-2</span>
+                            <span>FastAPI</span>
+                            <span>Docker</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: EmpVision -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project_face_attendance.png" alt="EmpVision" onerror="this.src='https://via.placeholder.com/600x400/112240/64ffda?text=EmpVision'">
+                        <div class="project-links">
+                            <a href="empvision.html" title="View Details"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/tamer-elkoT/Employee-Attendance-System/tree/main" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3><a href="empvision.html" style="color: inherit;">EmpVision</a></h3>
+                        <div class="project-description">
+                            <ul>
+                                <li>Replaced legacy HOG methods with YOLOv8 and FaceNet, achieving high accuracy at 90° angles and in low-light conditions.</li>
+                                <li>Architected a FastAPI and PostgreSQL backend using native ARRAY types to store 512-dimensional face embeddings for vector similarity search.</li>
+                                <li>Designed a multi-threaded RTSP pipeline for zero-latency streaming with Passive Video Enrollment to filter blurred frames.</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span>YOLOv8</span>
+                            <span>FaceNet</span>
+                            <span>FastAPI</span>
+                            <span>Docker</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Employee Turnover -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project_turnover.png" alt="Employee Turnover Prediction" onerror="this.src='https://via.placeholder.com/600x400/112240/64ffda?text=Turnover'">
+                        <div class="project-links">
+                            <a href="https://github.com/tamer-elkoT/Employee-Churn-Analysis-" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Employee Turnover Prediction</h3>
+                        <div class="project-description">
+                            <ul>
+                                <li>Achieved 99% prediction accuracy using a tuned XGBoost model with SMOTE for class imbalance handling.</li>
+                                <li>Dockerized the application and deployed it via Streamlit, making the predictive tool accessible for end-users.</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span>XGBoost</span>
+                            <span>SMOTE</span>
+                            <span>Streamlit</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: Depression Rate Survey -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project_depression.png" alt="Depression Rate Survey" onerror="this.src='https://via.placeholder.com/600x400/112240/64ffda?text=Depression+Survey'">
+                        <div class="project-links">
+                            <a href="https://github.com/tamer-elkoT/Depression-Survey-Kaggle-Competition" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Depression Rate Survey (Kaggle Top 8)</h3>
+                        <div class="project-description">
+                            <ul>
+                                <li>Built an ML pipeline achieving 92.09% accuracy, ranking Top 8 of 500+ participants using Optuna hyperparameter tuning.</li>
+                                <li>Utilized Stratified K-Fold Cross-Validation to ensure robust performance across minority classes.</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span>XGBoost</span>
+                            <span>Optuna</span>
+                            <span>Scikit-learn</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jan 2026 – Present</div>
+                    <div class="timeline-content">
+                        <h3>Computer Vision Engineer Intern</h3>
+                        <h4><a href="https://www.linkedin.com/company/cellula-technologies/posts/?feedView=all" target="_blank">Celulla Technology (Remote)</a></h4>
+                        <ul class="experience-details">
+                            <li><strong>Shoplifting Detection:</strong> Directed a team to develop a real-time CNN + LSTM & MoViNet system.</li>
+                            <li><strong>Water Segmentation:</strong> Engineered 'AgriVision' using Sentinel-2 and U-Net for flood monitoring.</li>
+                            <li><strong>Teeth Classification:</strong> Built an end-to-end diagnostic system using FastAPI and Streamlit.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jan 2026 – Present</div>
+                    <div class="timeline-content">
+                        <h3>Machine Learning Engineer Intern</h3>
+                        <h4><a href="https://www.linkedin.com/company/technocolabs/posts/?feedView=all" target="_blank">Technocolabs Softwares (Remote)</a></h4>
+                        <ul class="experience-details">
+                            <li><strong>Predictive Risk Engine:</strong> Building an end-to-end SLA breach predictor for logistics.</li>
+                            <li><strong>Data Analysis:</strong> Analyzed 200,000+ shipment records; identified primary failure drivers.</li>
+                            <li><strong>MLOps Pipeline:</strong> Engineered a robust pipeline with data validation for XGBoost modeling.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jun 2024 – Feb 2025</div>
+                    <div class="timeline-content">
+                        <h3>AI Engineer Trainee</h3>
+                        <h4><a href="https://www.linkedin.com/company/neurotech-eg/posts/?feedView=all" target="_blank">Neurotech (Remote)</a></h4>
+                        <ul class="experience-details">
+                            <li>Mastered Python OOP and implemented data extraction pipelines using BeautifulSoup.</li>
+                            <li>Gained foundational knowledge in AI principles and industry applications.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <p class="degree">Bachelor of Science in Mechatronics Engineering</p>
+                    <p class="institution">Higher Institute of Engineering & Technology (Expected: May 2027)</p>
+                </div>
+                <div class="education-card">
+                    <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                    <ul class="cert-list">
+                        <li>
+                            <a href="https://drive.google.com/file/d/1s_51HiIulHUn_QksoJqSMf5Xufjtmjur/view" target="_blank">
+                                Machine Learning & Deep Learning, NTI <span class="cert-date">(Aug 2025)</span> <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </li>
+                        <li>
+                            Deep Learning for Computer Vision, NTI <span class="cert-date">(Sep 2025)</span>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1c4RNTUAjUu6GEEPnk5fwOn_WCERbX75n/view" target="_blank">
+                                Machine Learning & Deep Learning, Neurotech <span class="cert-date">(Apr 2025)</span> <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1s_51HiIulHUn_QksoJqSMf5Xufjtmjur/view" target="_blank">
+                                Artificial Intelligence, NTI <span class="cert-date">(Jul 2025)</span> <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1cZCZ-ika1Pn6E4FEZSzvR6nbq_xRiUdt/view" target="_blank">
+                                HCIA-AI V4, Huawei ICT Academy <span class="cert-date">(Jul 2025)</span> <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <h2>Let's Build Together</h2>
+                <p>Interested in robust AI solutions? Reach out.</p>
+                <div class="contact-details">
+                    <a href="mailto:tamer.elkot.ai@gmail.com"><i class="fas fa-envelope"></i> tamer.elkot.ai@gmail.com</a>
+                    <a href="tel:+201097396074"><i class="fas fa-phone"></i> +20 109 739 6074</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/tamer-elkot/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/tamer-elkoT" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tamer Elkot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

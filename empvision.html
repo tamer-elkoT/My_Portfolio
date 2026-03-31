@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpVision | Tamer Elkot</title>
+    <meta name="description" content="Detailed overview of the EmpVision Face Recognition Attendance System by Tamer Elkot.">
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="project-page">
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Tamer Elkot<span class="accent">.</span></a>
+             <div class="nav-links">
+                <a href="index.html#projects" class="btn-outline"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero Header -->
+    <header class="project-hero">
+        <div class="container project-hero-content">
+            <h1 class="animate-up">👁️ EmpVision</h1>
+            <h2 class="animate-up delay-1">Smart Biometric Attendance System</h2>
+            <p class="animate-up delay-2">An intelligent high-performance workforce intelligence system utilizing YOLOv8 and FaceNet to manage real-time video enrollments and attendance.</p>
+            <div class="top-links animate-up delay-3">
+                <a href="https://github.com/tamer-elkoT/Employee-Attendance-System/tree/main" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> View Repository</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Project Body -->
+    <main class="container project-details-container section">
+        
+        <div class="content-block animate-up">
+            <h3 class="block-title">🏗️ System Architecture & Design</h3>
+            <p>The project follows a scalable MVC (Model-View-Controller) architecture to ensure clean code separation and maintainability. A high-level overview of the Client-Server-Database logic handles user registration and daily video check-ins gracefully.</p>
+            <pre class="code-block"><code>EmpVision/
+│
+├── .streamlit/
+│   └── config.toml
+│
+├── app/
+│   ├── __init__.py
+│   ├── core/               # ⚙️ Config & Database connection
+│   │   ├── config.py
+│   │   └── database.py
+│   ├── models/             # 🗄️ Database Schemas (SQLAlchemy)
+│   │   └── employee.py
+│   ├── services/           # 🧠 AI Logic (Face Recognition & Detection)
+│   │   └── face_logic.py
+│   ├── controllers/        # 🎮 API Route Handlers
+│   │   └── auth_controller.py
+│   └── main.py             # 🚀 Application Entry Point (FastAPI)
+│
+├── frontend.py             # 🎨 Streamlit Dashboard (The UI)
+├── .env                    # 🔒 Environment Variables
+├── environment.yml         # 📦 Conda Dependencies
+└── README.md               # 📖 Documentation</code></pre>
+        </div>
+
+        <div class="content-block animate-up">
+            <h3 class="block-title">🚀 Usage & Installation</h3>
+            
+            <div class="workflow-steps">
+                <div class="step">
+                    <h4>1. Prerequisites & Environment</h4>
+                    <p>Uses strict Conda dependency management (<code>environment.yml</code>) running natively or via WSL 2. PostgreSQL is configured for robust concurrent data persistence.</p>
+                </div>
+                <div class="step">
+                    <h4>2. Backend Engine (Terminal 1)</h4>
+                    <p>FastAPI acts as the deep-learning orchestrator handling video streams via <code>uvicorn app.main:app --reload</code>.</p>
+                </div>
+                <div class="step">
+                    <h4>3. Frontend Dashboard (Terminal 2)</h4>
+                    <p>The visual UI launches via <code>streamlit run frontend.py</code>, enabling immediate cross-origin configuration mapped dynamically to the API.</p>
+                </div>
+                <div class="step">
+                    <h4>4. Remote Edge Access</h4>
+                    <p>Supports instant LAN or WAN mirroring via Ngrok tunnels, streaming the reactive dashboard directly to mobile devices without latency delays.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-block animate-up">
+            <h3 class="block-title">🗺️ Strategic Roadmap (v2.0)</h3>
+            <p>From a foundational prototype to a production-ready intelligence network.</p>
+
+            <div class="problems-grid">
+                
+                <div class="problem-card">
+                    <h4>Phase 1: Database Migration & Integrity</h4>
+                    <div class="problem-issue">Migrated from SQLite to <strong>PostgreSQL</strong>. SQLite inherently struggles with morning rush-hour concurrency limitations. PostgreSQL fully mitigates this risk while providing robust security.</div>
+                    <div class="problem-solution">Implemented strict <strong>Pydantic Schemas (v2)</strong> validating deep profile configurations (Regex Emails, E.164 Phone constraints) linking arrays into a functional mini-HR directory via SQLAlchemy.</div>
+                </div>
+
+                <div class="problem-card">
+                    <h4>Phase 2: AI Core Overhaul & Intelligent Logic</h4>
+                    <div class="problem-issue"><strong>YOLOv8 Consolidation:</strong> Replaced outdated rigid HOG estimators and MTCNNs with an ultralytics unified YOLOv8 pipeline. This handles 90° face profiles and terrible lighting natively natively via CPU inference pipelines connected to ResNet embeddings.</div>
+                    <div class="problem-solution"><strong>Passive Video Enrollment:</strong> Shifted away from static photos. Registration seamlessly initiates a webcam feed, automatically scoring blur factors (Laplacian Variance) and capturing only the 5 "optimal" face frames asynchronously. RTSP integration enabled actual IP-camera simulation.</div>
+                </div>
+
+                <div class="problem-card">
+                    <h4>Phase 3: Security & Anti-Spoofing</h4>
+                    <div class="problem-issue">Standard biometric systems are easily bypassed with smartphone photographs or tablets playing pre-recorded videos.</div>
+                    <div class="problem-solution">Building presentation attack safeguards using Texture/Frequency Liveness analysis and YOLO Landmark active eye-blink tracking to guarantee human presence.</div>
+                </div>
+
+                <div class="problem-card">
+                    <h4>Phase 4 & 5: Scalable Single-Page App & Edge Deployment</h4>
+                    <div class="problem-issue"><strong>React & Cloud Edge:</strong> Transitioning away from Streamlit to a full React/Next.js frontend. Backend remains decoupled and Dockerized onto AWS EC2 instances alongside RDS stores.</div>
+                    <div class="problem-solution"><strong>Hardware Integration:</strong> Deploying the minimized YOLOv8n module directly onto Edge Raspberry Pi 5 sensors. The Pi processes frames natively and only transmits light-weight 512-dimensional vector payloads to the cloud, dropping bandwidth overhead to almost zero.</div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-bottom" style="border:none; padding-top:40px;">
+            <p>&copy; 2026 Tamer Elkot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
