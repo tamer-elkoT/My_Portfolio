@@ -12,19 +12,24 @@
     "bookConsultation": "Book a Consultation"
   },
   "hero": {
-    "statusChip": "Available for AI Engineering Roles & Freelance Projects",
-    "name": "TAMER ELKOT",
-    "title": "AI Engineer",
-    "tagline": "I build computer vision and generative AI systems — from satellite imagery analysis to production-ready LLM pipelines — that turn research-grade models into products businesses can actually rely on.",
-    "typingPhrases": ["Computer Vision", "Generative AI Agents", "MLOps & Backend Systems"],
-    "ctaPrimary": "Let's Build Your AI Solution",
-    "ctaSecondary": "Technical Stack"
+    "statusChip": "Available for AI Engineering Roles & Freelance Projects (Cairo / Remote)",
+    "name": "Tamer Elkot",
+    "title": "AI Engineer | Computer Vision & GenAI Specialist",
+    "tagline": "I build scalable Computer Vision and Generative AI systems — from satellite imagery analysis to production-ready LLM pipelines. I help businesses transform complex ML models into reliable, high-performance software products.",
+    "typingPhrases": [
+      "Computer Vision & Image Processing",
+      "Generative AI & LLM Agents",
+      "MLOps & Backend Engineering",
+      "Data Pipelines & Cloud Deployment"
+    ],
+    "ctaPrimary": "Build Your AI Solution",
+    "ctaSecondary": "Explore Tech Stack"
   },
   "summary": {
     "eyebrow": "About Me",
-    "title": "About Me",
-    "p1": "I'm an AI Engineer based in Cairo, specializing in computer vision, backend systems, and applied generative AI. I help teams turn ambitious ideas — satellite monitoring, biometric attendance, AI-powered CRMs — into fast, reliable products, from the first data pipeline to a live deployment.",
-    "p2": "Recent work includes a bilingual AI sales assistant built into a CRM, a satellite-based water-monitoring system for agriculture, and a real-time facial recognition attendance platform — each shipped end-to-end with FastAPI, Docker, and cloud-ready ML pipelines. If you need a computer vision model in production, an LLM-powered workflow, or a dedicated AI engineer for your team, I can help you get there.",
+    "title": "Driving Business Value with Applied AI & MLOps",
+    "p1": "I am an AI Engineer based in Cairo, Egypt, specializing in Computer Vision, Backend Architecture, and Applied Generative AI. I partner with teams to turn ambitious concepts — such as geospatial satellite monitoring, real-time biometric attendance, and AI-driven CRM engines — into fast, scalable, and reliable products. I manage the entire lifecycle, from building the initial Data Pipelines to final Cloud Deployment.",
+    "p2": "My recent production work includes architecting Rabih CRM (a bilingual AI sales assistant), AgriVision (a geospatial satellite water monitoring system), and EmpVision (a real-time facial recognition attendance platform). These end-to-end solutions are fully deployed using production-grade tools like FastAPI, PostgreSQL, and Docker. Whether you need an MLOps expert to deploy a custom Computer Vision model or a Backend Engineer for complex LLM workflows, I deliver robust systems that scale.",
     "p3": ""
   },
   "pathways": {
@@ -32,10 +37,34 @@
     "title": "Featured Architectures & Explore",
     "subtitle": "Direct access to deployed microservices, benchmarked models, full engineering stack, and direct communications.",
     "cards": [
-      { "category": "Featured", "title": "Featured Production Systems", "desc": "Explore Rabih CRM (bilingual AI sales assistant), AgriVision (satellite water monitoring), and EmpVision (real-time facial recognition attendance).", "cta": "View Projects", "link": "/projects" },
-      { "category": "Capabilities", "title": "Technical Stack", "desc": "The frameworks and tools I use daily: PyTorch, YOLOv8, LangChain, Groq, PostgreSQL, Docker, and OpenCV.", "cta": "View Full Stack", "link": "/tech-stack" },
-      { "category": "Experience", "title": "Career & Credentials", "desc": "My work experience, mentorship roles, Kaggle results, and certifications.", "cta": "View Experience", "link": "/career" },
-      { "category": "Contact", "title": "Contact", "desc": "Have a role, project, or idea in mind? Reach out — I usually reply within a few hours.", "cta": "Get in Touch", "link": "/contact" }
+      {
+        "category": "Featured",
+        "title": "Featured Production Systems",
+        "desc": "Explore Rabih CRM (bilingual AI sales assistant), AgriVision (satellite water monitoring), and EmpVision (real-time facial recognition attendance).",
+        "cta": "View Projects",
+        "link": "/projects"
+      },
+      {
+        "category": "Capabilities",
+        "title": "Technical Stack",
+        "desc": "The frameworks and tools I use daily: PyTorch, YOLOv8, LangChain, Groq, PostgreSQL, Docker, and OpenCV.",
+        "cta": "View Full Stack",
+        "link": "/tech-stack"
+      },
+      {
+        "category": "Experience",
+        "title": "Career & Credentials",
+        "desc": "My work experience, mentorship roles, Kaggle results, and certifications.",
+        "cta": "View Experience",
+        "link": "/career"
+      },
+      {
+        "category": "Contact",
+        "title": "Contact",
+        "desc": "Have a role, project, or idea in mind? Reach out — I usually reply within a few hours.",
+        "cta": "Get in Touch",
+        "link": "/contact"
+      }
     ]
   },
   "ctaBanner": {
@@ -107,7 +136,12 @@
     "formCompany": "Company Name",
     "formCompanyPlaceholder": "Your company (optional)",
     "formScope": "What are you looking for?",
-    "formScopeOptions": ["Full-time Engineering Role", "Contract Project", "Consulting", "Something Else"],
+    "formScopeOptions": [
+      "Full-time Engineering Role",
+      "Contract Project",
+      "Consulting",
+      "Something Else"
+    ],
     "formMessage": "Project Details",
     "formMessagePlaceholder": "Tell me about your project, timeline, and what you're hoping to achieve...",
     "formSubmit": "Send Message",
@@ -116,10 +150,22 @@
     "trustDesc": "I usually respond within a few hours. Tell me about your project, team, or role, and I'll get back to you with next steps.",
     "faqTitle": "Frequently Asked Questions",
     "faq": [
-      { "q": "What does Tamer Elkot do?", "a": "I'm an AI Engineer specializing in computer vision, generative AI, and backend systems. I help companies build production-ready ML pipelines and AI products." },
-      { "q": "What projects has Tamer Elkot built?", "a": "My recent work includes Rabih CRM (a bilingual AI sales assistant), AgriVision (satellite water monitoring), and EmpVision (real-time facial recognition attendance)." },
-      { "q": "What technologies does Tamer Elkot work with?", "a": "My core stack includes Python, PyTorch, YOLOv8, OpenCV, FastAPI, PostgreSQL, Docker, and various LLMs via Groq and LangChain." },
-      { "q": "Is Tamer Elkot available for freelance work?", "a": "Yes, I am currently available for full-time roles, freelance projects, and AI consulting worldwide." }
+      {
+        "q": "What does Tamer Elkot do?",
+        "a": "I'm an AI Engineer specializing in computer vision, generative AI, and backend systems. I help companies build production-ready ML pipelines and AI products."
+      },
+      {
+        "q": "What projects has Tamer Elkot built?",
+        "a": "My recent work includes Rabih CRM (a bilingual AI sales assistant), AgriVision (satellite water monitoring), and EmpVision (real-time facial recognition attendance)."
+      },
+      {
+        "q": "What technologies does Tamer Elkot work with?",
+        "a": "My core stack includes Python, PyTorch, YOLOv8, OpenCV, FastAPI, PostgreSQL, Docker, and various LLMs via Groq and LangChain."
+      },
+      {
+        "q": "Is Tamer Elkot available for freelance work?",
+        "a": "Yes, I am currently available for full-time roles, freelance projects, and AI consulting worldwide."
+      }
     ]
   },
   "footer": {

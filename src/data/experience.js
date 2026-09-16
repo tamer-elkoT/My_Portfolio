@@ -11,12 +11,12 @@ export const experience = [
     category: 'mentorship',
     icon: 'school',
     bullets: [
-      'Directed an intensive 12-week applied AI cohort, transitioning engineers from theoretical deep learning to production-grade deployment patterns.',
+      'Directed an advanced applied AI program, upskilling engineers to bridge the gap between theoretical deep learning and scalable, production-grade ML architectures.',
       'Architected end-to-end data pipelines incorporating SQL optimization, interactive Power BI decision dashboards, and resilient Python automation.',
       'Enforced strict code quality standards, conducting rigorous code reviews focusing on pipeline scalability and statistical integrity.',
     ],
     bulletsAr: [
-      'إدارة مجموعة ذكاء اصطناعي تطبيقي مكثفة لمدة 12 أسبوعاً، لنقل المهندسين من التعلم العميق النظري إلى أنماط النشر على مستوى الإنتاج.',
+      'إدارة برنامج متقدم في الذكاء الاصطناعي التطبيقي، لرفع كفاءة المهندسين وسد الفجوة بين التعلم العميق النظري ومعماريات التعلم الآلي القابلة للتوسع على مستوى الإنتاج.',
       'تصميم Pipelines بيانات شاملة تتضمن تحسين SQL، ولوحات تحكم قرار تفاعلية عبر Power BI، وأتمتة مرنة عبر Python.',
       'فرض معايير صارمة لجودة الكود، وإجراء مراجعات كود دقيقة تركز على قابلية توسع الـ Pipelines والنزاهة الإحصائية.',
     ],

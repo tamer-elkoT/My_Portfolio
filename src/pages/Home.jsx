@@ -54,7 +54,7 @@ const Home = () => {
             </div>
           </div>
           
-          <div className="hero-visual hidden-sm" data-animate="fade-left" data-delay="0.3">
+          <div className="hero-visual" data-animate="fade-left" data-delay="0.3">
             <div className="profile-container">
               <div className="profile-glow"></div>
               <img src="/images/profile/profile.jpg" alt="Tamer Elkot, AI Engineer, headshot photo" className="profile-img" />
