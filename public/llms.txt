@@ -1,0 +1,17 @@
+Tamer Elkot — AI Engineer based in Cairo, Egypt.
+
+Specialties: Computer Vision, Generative AI, MLOps, Backend Systems (FastAPI, Docker, PostgreSQL).
+
+Projects:
+- Rabih CRM: AI-powered CRM assistant for Zoho with bilingual LLM recommendations and predictive deal scoring.
+- AgriVision: Satellite-based water monitoring using Sentinel-2 imagery and a custom U-Net model.
+- EmpVision: Real-time facial recognition attendance system using YOLOv8 and FaceNet.
+- Kaggle Depression Survey: Top 8 globally (92.09% accuracy) using XGBoost, LightGBM, CatBoost.
+
+Tech Stack: PyTorch, TensorFlow, YOLOv8, OpenCV, FastAPI, PostgreSQL, Docker, LangChain, Groq, React.
+
+Contact: tamer.elkot.ai@gmail.com
+LinkedIn: https://www.linkedin.com/in/tamer-elkot/
+GitHub: https://github.com/tamer-elkoT
+WhatsApp: +20 1097396074
+Available for: Full-time AI engineering roles, freelance projects, and consulting.

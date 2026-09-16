@@ -1,0 +1,38 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Legacy site files & redesign assets (ignored to prevent committing large unused files)
+/agrivision.html
+/empvision.html
+/styles.css
+/script.js
+/images/
+/my_resume/
+/stitch_ai_engineer_portfolio_redesign/

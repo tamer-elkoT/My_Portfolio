@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "AI Projects",
+    "techStack": "Tech Stack",
+    "career": "Career & Credentials",
+    "competitions": "Competitions",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp",
+    "resume": "Resume",
+    "openToOpportunities": "Open to AI Opportunities",
+    "bookConsultation": "Book a Consultation"
+  },
+  "hero": {
+    "statusChip": "Available for AI Engineering Roles & Freelance Projects",
+    "name": "TAMER ELKOT",
+    "title": "AI Engineer",
+    "tagline": "I build computer vision and generative AI systems — from satellite imagery analysis to production-ready LLM pipelines — that turn research-grade models into products businesses can actually rely on.",
+    "typingPhrases": ["Computer Vision", "Generative AI Agents", "MLOps & Backend Systems"],
+    "ctaPrimary": "Let's Build Your AI Solution",
+    "ctaSecondary": "Technical Stack"
+  },
+  "summary": {
+    "eyebrow": "About Me",
+    "title": "About Me",
+    "p1": "I'm an AI Engineer based in Cairo, specializing in computer vision, backend systems, and applied generative AI. I help teams turn ambitious ideas — satellite monitoring, biometric attendance, AI-powered CRMs — into fast, reliable products, from the first data pipeline to a live deployment.",
+    "p2": "Recent work includes a bilingual AI sales assistant built into a CRM, a satellite-based water-monitoring system for agriculture, and a real-time facial recognition attendance platform — each shipped end-to-end with FastAPI, Docker, and cloud-ready ML pipelines. If you need a computer vision model in production, an LLM-powered workflow, or a dedicated AI engineer for your team, I can help you get there.",
+    "p3": ""
+  },
+  "pathways": {
+    "eyebrow": "Portfolio Pathways",
+    "title": "Featured Architectures & Explore",
+    "subtitle": "Direct access to deployed microservices, benchmarked models, full engineering stack, and direct communications.",
+    "cards": [
+      { "category": "Featured", "title": "Featured Production Systems", "desc": "Explore Rabih CRM (bilingual AI sales assistant), AgriVision (satellite water monitoring), and EmpVision (real-time facial recognition attendance).", "cta": "View Projects", "link": "/projects" },
+      { "category": "Capabilities", "title": "Technical Stack", "desc": "The frameworks and tools I use daily: PyTorch, YOLOv8, LangChain, Groq, PostgreSQL, Docker, and OpenCV.", "cta": "View Full Stack", "link": "/tech-stack" },
+      { "category": "Experience", "title": "Career & Credentials", "desc": "My work experience, mentorship roles, Kaggle results, and certifications.", "cta": "View Experience", "link": "/career" },
+      { "category": "Contact", "title": "Contact", "desc": "Have a role, project, or idea in mind? Reach out — I usually reply within a few hours.", "cta": "Get in Touch", "link": "/contact" }
+    ]
+  },
+  "ctaBanner": {
+    "title": "Have an AI project in mind?",
+    "subtitle": "Let's talk about your goals, timeline, and budget — I'll tell you honestly what's possible.",
+    "whatsapp": "WhatsApp Chat",
+    "email": "Email Me"
+  },
+  "projects": {
+    "pageTitle": "AI Systems & Case Studies",
+    "pageSubtitle": "Selected engineering projects — from satellite-scale computer vision to production AI CRMs. Each one shipped, deployed, and solving a real problem.",
+    "filterAll": "All Projects",
+    "filterCV": "Computer Vision",
+    "filterNLP": "NLP / LLM",
+    "filterDS": "Data Science",
+    "viewGithub": "GitHub Repository",
+    "viewDemo": "Live Demo",
+    "viewArchitecture": "View System Architecture",
+    "viewDetails": "View Case Study"
+  },
+  "techStack": {
+    "pageTitle": "Technical Stack & Architectural Capabilities",
+    "pageSubtitle": "The frameworks, languages, and infrastructure I use to take AI projects from prototype to production.",
+    "architectureTitle": "How I build AI systems, from raw data to a working product",
+    "architectureSubtitle": "",
+    "pipelineLabel": "Active Data Path",
+    "ctaTitle": "Want to see this stack in action?",
+    "ctaSubtitle": "Discover full-scale deployed projects including autonomous vision systems, bilingual agentic pipelines, and high-frequency IoT pipelines.",
+    "ctaButton": "View Projects"
+  },
+  "career": {
+    "pageTitle": "Experience & Certifications",
+    "pageSubtitle": "My work history across AI engineering, mentorship, and applied machine learning.",
+    "timelineTitle": "Work Experience & Mentorship",
+    "filterAll": "All Roles",
+    "filterEngineering": "Engineering",
+    "filterMentorship": "Mentorship",
+    "educationTitle": "Education",
+    "ctaTitle": "Need rigorous AI architecture on your team?",
+    "ctaDownload": "Download Official CV",
+    "ctaContact": "Get In Touch"
+  },
+  "competitions": {
+    "pageTitle": "Competitions & Hackathons",
+    "pageSubtitle": "Translating rapid algorithmic prototyping, multilingual NLP, and multispectral computer vision into real-world deployments under intense competition constraints.",
+    "ctaTitle": "Have a High-Stakes Algorithmic Challenge or AI Project?",
+    "ctaSubtitle": "Let's build something extraordinary together.",
+    "ctaPrimary": "Discuss Collaboration",
+    "ctaSecondary": "Instant WhatsApp Chat"
+  },
+  "contact": {
+    "pageTitle": "Let's Build Something",
+    "pageSubtitle": "Open to AI Engineering roles, freelance projects, and consulting work in computer vision, generative AI, and backend systems.",
+    "statusTitle": "Currently Open to Roles & Projects",
+    "statusDesc": "I usually respond within a few hours. Tell me about your project, team, or role, and I'll get back to you with next steps.",
+    "responseTime": "Avg. response: 2-4 hours",
+    "directChannels": "Direct Channels",
+    "whatsappLabel": "Direct WhatsApp",
+    "emailLabel": "Work Email",
+    "locationLabel": "Location",
+    "locationBadge": "Cairo, Egypt — available remote, worldwide",
+    "downloadCV": "Download Engineering CV",
+    "networkMatrix": "Network Matrix",
+    "formTitle": "Project Specification",
+    "formName": "Full Name",
+    "formNamePlaceholder": "e.g. Elena Vance, PhD",
+    "formEmail": "Work Email",
+    "formEmailPlaceholder": "name@organization.ai",
+    "formCompany": "Company Name",
+    "formCompanyPlaceholder": "Your company (optional)",
+    "formScope": "What are you looking for?",
+    "formScopeOptions": ["Full-time Engineering Role", "Contract Project", "Consulting", "Something Else"],
+    "formMessage": "Project Details",
+    "formMessagePlaceholder": "Tell me about your project, timeline, and what you're hoping to achieve...",
+    "formSubmit": "Send Message",
+    "formPrivacy": "Your information is private and only used to respond to you.",
+    "trustTitle": "Let's discuss your project",
+    "trustDesc": "I usually respond within a few hours. Tell me about your project, team, or role, and I'll get back to you with next steps.",
+    "faqTitle": "Frequently Asked Questions",
+    "faq": [
+      { "q": "What does Tamer Elkot do?", "a": "I'm an AI Engineer specializing in computer vision, generative AI, and backend systems. I help companies build production-ready ML pipelines and AI products." },
+      { "q": "What projects has Tamer Elkot built?", "a": "My recent work includes Rabih CRM (a bilingual AI sales assistant), AgriVision (satellite water monitoring), and EmpVision (real-time facial recognition attendance)." },
+      { "q": "What technologies does Tamer Elkot work with?", "a": "My core stack includes Python, PyTorch, YOLOv8, OpenCV, FastAPI, PostgreSQL, Docker, and various LLMs via Groq and LangChain." },
+      { "q": "Is Tamer Elkot available for freelance work?", "a": "Yes, I am currently available for full-time roles, freelance projects, and AI consulting worldwide." }
+    ]
+  },
+  "footer": {
+    "tagline": "I design and deploy computer vision, generative AI, and MLOps systems that solve real business problems.",
+    "copyright": "© 2026 Tamer Elkot. All rights reserved.",
+    "status": "",
+    "location": "CAIRO, EG",
+    "dispatch": "Direct AI Dispatch"
+  }
+}
